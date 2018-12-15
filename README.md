@@ -25,5 +25,6 @@ En el archivo memberTable.tsx
 	  }
 
   y se van cargando según escribe el usuario
+  
 	 Input new organization: write and it will load automatically <input name='valor' 
 	 onChange={event => this.loadOtherMembers(event)} />
