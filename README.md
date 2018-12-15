@@ -31,28 +31,27 @@ En el archivo memberTable.tsx
 
 quedando finalmente todo:
 
- loadMembers = () => {
+	 loadMembers = () => {
     memberAPI.getAllMembers('lemoncode').then((members) =>
       this.setState({ members: members })
     );
   }
 
-  loadMicrosoft = () => {
+  	loadMicrosoft = () => {
      memberAPI.getAllMembers('Microsoft').then((members) =>
       this.setState({ members: members })
     );
   }
 
-  loadOtherMembers(event) {
+  	loadOtherMembers(event) {
       memberAPI.getAllMembers( event.target.value).then((members) =>
       this.setState({ members: members })
     );
   }
 
    
-  public render() {
-  
-    return (
+  	public render() {
+      return (
       <div className="row" >
         
         <h2> Ejercicio React</h2>
