@@ -6,13 +6,13 @@ En el archivo memberTable.tsx
 - Se cargan lemoncode -> ya hecho
 - Se cargan Microsoft 
 
-	 loadMicrosoft = () => {
+	  loadMicrosoft = () => {
 	     memberAPI.getAllMembers('Microsoft').then((members) =>
 	      this.setState({ members: members })
 	    );
 	  }
 
-	<button onClick={this.loadMicrosoft}>Load Microsoft</button>
+	  <button onClick={this.loadMicrosoft}>Load Microsoft</button>
 
 - Según se va escribiendo en el input se van cargando los miembros.
 
@@ -25,6 +25,6 @@ En el archivo memberTable.tsx
 	  }
 
   y se van cargando según escribe el usuario
-  
-	 Input new organization: write and it will load automatically <input name='valor' 
-	 onChange={event => this.loadOtherMembers(event)} />
+  		
+		Input new organization: write and it will load automatically <input name='valor' 
+	 	onChange={event => this.loadOtherMembers(event)} />
